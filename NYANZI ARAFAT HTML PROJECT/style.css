@@ -1,0 +1,335 @@
+
+*{
+	background: wheat;
+	text-align: center;
+	box-sizing: border-box;
+}
+body{
+	width: 80%;
+	margin: 40px auto;
+}
+.logo img{
+	height: 70px;
+	width: 70px;
+	text-align: center;
+}
+.logo{
+	align-content: center;
+	padding: 20px 0 0 0;
+}
+.banner video{
+	height: 300px;
+}
+.plots{
+	display: flex;
+	justify-content: space-between;
+}
+
+.feats{
+	width: 50%;
+	display: flex;
+	justify-content: space-between;
+	background: white;
+}
+.feats h4{
+	background: transparent;
+}
+.feats img{
+	width: 150px;
+	height: 150px;
+	justify-content: space-between;
+	padding: 10px;
+	justify-content: center;
+	background: transparent;
+}.dream{
+	text-align: center;
+}
+.donate{
+	justify-content: center;
+	width: 380px;
+	float: center;
+	position: relative;
+	padding: 20px;
+	border-radius: 20px;
+	backdrop-filter: blur(15px);
+	background: rgba(255, 255, 255, 0.1);
+	border: 1px rgba(255, 255, 255, 0.4);
+	box-shadow: 0 25px 45px rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+	z-index: 10;
+	text-align: center;
+}
+.button-order button{
+	background: white;
+	color: black;
+	margin-bottom: 15px;
+	border-radius: 0 10px 0 10px;
+	border: none;
+	width: 30%;
+	height: 40pxs;
+}
+.button-order button:hover{
+	background-color: ghostwhite;
+	box-shadow: 1px 5px lightgreen ;
+	border: lightgreen;
+	border-radius: 10px 0 10px 0;
+	overflow: hidden;
+}
+.inputgroup{
+	width: 100%;
+	height: 70px;
+	padding: 10px 10px;
+	border: none;
+	border-radius: 10px;
+	background: transparent;
+}
+.inputgroup input:hover{
+	background-color: ghostwhite;
+}
+.inputgroup input{
+	width: 100%;
+	height: 50px;
+	background: lightgreen;
+	border: none;
+	font-size: 15px;
+	outline: none;
+	border-radius: 0 20px 0 20px;
+	color: black;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+
+}
+.inputgroup input::placeholder{
+	color: black;
+	font-size: 20px;
+}
+.inputgroup select{
+	width: 100%;
+	height: 50px;
+	background: lightgreen;
+	border: none;
+	font-size: 15px;
+	outline: none;
+	border-radius: 0 20px 0 20px;
+	color: black;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+.inputgroup option{
+	background: black;
+	font-size: 15px;
+	color: white;
+}
+.donate button{
+	width: 50%;
+	padding: 15px;
+	color: black;
+	background: lightgreen;
+	border: none;
+	border-radius: 20px 20px 20px 20px;
+	height: 35px;
+	justify-content: center;
+	font-size: 15px;
+	cursor: pointer;
+	font-weight: 600px;
+}
+h4{
+	color: black;
+	padding: 5px;
+}
+.container{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	height: 200px;
+	gap: 16px;
+	transition: 0.3s;
+}
+.container li{
+	position: relative;
+	overflow: hidden;
+	flex: 0 0 80px;
+	border-radius: 50px;
+	cursor: pointer;
+	border-radius: 10px;
+	border: 1.2px solid #eee;
+	box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.4), -2px -5px 10px rgba(0, 0, 0, 0.1);
+}
+.container li img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	translate: -50% -50%;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.container li, .container li img{
+	transition: 0.3s;
+}
+.container li .content{
+	transition: 1.5s ease;
+}
+.container span{
+	text-align: center;
+	width: 75%;
+}
+.container h2{
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 4px;
+	margin-bottom: 3px;
+	white-space: nowrap;
+	color: wheat;
+	background: transparent;
+
+
+}
+.container p{
+	color: navajowhite;
+	font-size: 10px;
+	width: 100px;
+	background: transparent;
+	text-align: center;
+}
+.container li .content{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	color:#fff;
+	padding: 15px;
+	background: linear-gradient(0deg, rgb(0 0 0 / 70%) 10%, rgb(255 255 255 / 0%) 100%);
+	opacity: 0;
+	visibility: hidden;
+}
+.container:hover{
+	gap: 0;
+}
+container li .content span{
+	position: absolute;
+	z-index: 3;
+	left:50%;
+	bottom: 0px;
+	translate: -50%;
+	scale: 0.85;
+	visibility: hidden;
+	opacity: 0;
+}
+.container li:hover{
+	flex: 0 1 260px;
+	scale: 1.1;
+	z-index: 10;
+	opacity: 1;
+}
+.container li img{
+}
+.container li:hover .content{
+	opacity: 1;
+	visibility: visible;
+}
+.container li:hover span{
+	scale: 1;
+	opacity:1;
+	visibility:visible;
+}
+.last h3{
+	color: white;
+}
+.member{
+	padding: 5px;
+
+}
+.inputgroup2{
+	padding: 4px;
+}
+.inputgroup2 input{
+	width: 35%;
+	height: 40px;
+	background: white;
+	border: none;
+	font-size: 15px;
+	border-radius: 20px 0 20px 0;
+	color: black;
+	outline: none;
+}
+.inputgroup2 input::placeholder{
+	color: black;
+	font-size: 15px;
+	border: none;
+}
+.inputgroup2 input:hover {
+	background-color: lightskyblue;
+}
+.glowing{
+	position: relative;
+	width: 300px;
+	margin: 40px auto;
+}
+.glowing input{
+	width: 100%;
+	padding: 5px;
+	background: transparent;
+	border: none;
+	border-bottom: 3px solid #ccc;
+	color: black;
+	font-size: 16px;
+	outline: none;
+}
+glowing input::placeholder{
+	color: black;
+	font-size: 20px;
+}
+.focus-border{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 3px;
+	background: #00d8d6;
+	box-shadow: 0 0 10px #34e7e4;
+	transition: all 0.8s ease;
+}
+.glowing input:focus ~ .focus-border{
+	width: 110%;
+}
+.member button{
+	background: black;
+	border-radius: 25px;
+	width: 20%;
+	height: 40px;
+	color: white;
+	font-size: 20px;
+}
+.gender{
+	padding: 5px;
+}
+.gender input::lable{
+	background: white;
+	font-size: 10px;
+}
+@media(max-width: 820px){
+	.feats{
+	width: 500px;
+	display: block;
+	justify-content: space-between;
+	background: transparent;
+}
+.feats h4{
+	background: transparent;
+}
+.feats img{
+	width: 100px;
+	height: 100px;
+	justify-content: space-between;
+	padding: 10px;
+	justify-content: center;
+	background: transparent;
+}
+
+}
+@media(max-width: 530px){
+	.donate{
+	justify-content: center;
+	width: 300px;
+}
